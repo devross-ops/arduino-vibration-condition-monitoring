@@ -68,6 +68,7 @@ pip install pandas matplotlib pyserial
 2. Connect Arduino to computer via USB
 3. Run Python visualization script
 4. Monitor real-time vibration data
+5. CSV data stored and "CSVsavedata" can be run to see past 100 vibration points
 
 ## Applications
 
