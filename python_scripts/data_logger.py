@@ -3,6 +3,7 @@ import time
 import matplotlib.pyplot as plt
 import csv
 from collections import deque
+import os
 
 # Connect to Arduino (Change 'COM3' to match your port)
 ser = serial.Serial('COM3', 9600, timeout=1)
@@ -14,7 +15,7 @@ fig, ax = plt.subplots()
 data = deque(maxlen=100)  # Stores last 100 values for live graphing
 
 # Open CSV file to store data
-with open("vibration_data.csv", "w", newline="") as file:
+with open("data/vibration_data.csv", "w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["Timestamp", "Vibration Value"])  # CSV headers
 

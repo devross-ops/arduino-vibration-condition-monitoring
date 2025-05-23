@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load CSV data
-df = pd.read_csv("vibration_data.csv")
+df = pd.read_csv("data/vibration_data.csv")
 
 # Plot saved data
 plt.plot(df["Timestamp"], df["Vibration Value"])
